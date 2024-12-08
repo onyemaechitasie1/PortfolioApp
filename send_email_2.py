@@ -1,4 +1,5 @@
 from email.message import EmailMessage
+import os
 import ssl
 import smtplib
 
@@ -7,7 +8,7 @@ port = 465
 
 # Email details
 email_sender = "lisawilson00222@gmail.com"
-email_password = "xabjoyncavfgthto"
+email_password = os.getenv("PASSWORD")
 email_receiver = "onyemaechitasie@gmail.com"
 
 subject = 'Sample Email'
